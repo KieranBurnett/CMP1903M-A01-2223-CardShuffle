@@ -14,5 +14,13 @@ namespace CMP1903M_A01_2223
         //The 'set' methods for these properties could have some validation
         public int Value { get; set; }
         public int Suit { get; set; }
+        
+        /*enum suit
+        {
+            Hearts,
+            Spades,
+            Diamond,
+            Clubs,
+        }*/
     }
 }
