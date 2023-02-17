@@ -73,11 +73,11 @@ namespace CMP1903M_A01_2223
             return deal_card;
 
         }
-        
+        /*
         public static List<Card> dealCard(int amount)
         {
             //Deals the number of cards specified by 'amount'
-        }
+        }*/
         
     }
 }
