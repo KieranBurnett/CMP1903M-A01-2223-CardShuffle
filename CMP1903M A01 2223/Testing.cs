@@ -8,9 +8,17 @@ namespace CMP1903M_A01_2223
 {
 	class Testing
 	{
-		//Creates a pack object
-		//Calls the shuffleCardPack method with each shuffle type
-		//Calls the deal method
-		//Check what is returned
+		public Testing()
+		{
+			//Creates a pack object
+			Pack card_pack = new Pack();
+			//Calls the shuffleCardPack method with each shuffle type
+			Pack.shuffleCardPack(1);
+			Pack.shuffleCardPack(2);
+			Pack.shuffleCardPack(3);
+			Pack.shuffleCardPack(4);
+			//Calls the deal method
+			//Check what is returned
+		}
 	}
 }

@@ -21,27 +21,34 @@ namespace CMP1903M_A01_2223
                     pack.Add(card);
                 }
             }
-            Console.WriteLine(pack[4].card_value);
             //Initialise the card pack here
         }
-        /*
         public static bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
             if (typeOfShuffle == 1 ) //Fisher-Yates Shuffle
             {
+                Console.WriteLine("Fisher-Yates Shuffle");
                 return true;
             }
             else if (typeOfShuffle == 2) //Riffle Shuffle
 			{
-                return true;
+				Console.WriteLine("Riffle Shuffle");
+				return true;
             }
             else if (typeOfShuffle == 3) //No Shuffle
 			{
-                return true;
+				Console.WriteLine("No Shuffle");
+				return true;
+            }
+            else 
+            {
+                Console.WriteLine("Incorrect type of shuffle");
+                return false;
             }
 
         }
+        /*
         public static Card deal()
         {
             //Deals one card

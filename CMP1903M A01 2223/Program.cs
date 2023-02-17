@@ -10,7 +10,7 @@ namespace CMP1903M_A01_2223
     {
         static void Main(string[] args)
         {
-			Pack card_pack = new Pack();
+			Testing test = new Testing();
 		}
 	}
 }
