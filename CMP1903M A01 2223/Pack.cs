@@ -37,31 +37,24 @@ namespace CMP1903M_A01_2223
                     pack.RemoveAt(card_pick);
                     pack.Add(temp);
                 }
-				// for (int i = 0; i < 52; i++) { Console.WriteLine($"Suit: {pack[i].card_suit}, Value: {pack[i].card_value}"); } //Outputs shuffled deck
 				return true;
             }
             else if (typeOfShuffle == 2) //Riffle Shuffle
 			{
-				Console.WriteLine("Riffle Shuffle");
                 Card temp;
                 for (int i = 0; i<=25; i++)
                 {
 					temp = pack[0];
-                    //Console.WriteLine($"Suit: {pack[0].card_suit}, Value: {pack[0].card_value}");
 					pack.RemoveAt(0);
                     pack.Add(temp);
 					temp = pack[25-i];
-					//Console.WriteLine($"Suit: {pack[25-i].card_suit}, Value: {pack[25-i].card_value}");
 					pack.RemoveAt(25-i);
                     pack.Add(temp);
                 }
-                //pack.Reverse();
-				for (int i = 0; i < 52; i++) { Console.WriteLine($"Suit: {pack[i].card_suit}, Value: {pack[i].card_value}"); }
 				return true;
             }
             else if (typeOfShuffle == 3) //No Shuffle
 			{
-				Console.WriteLine("No Shuffle");
 				return true;
             }
             else 
