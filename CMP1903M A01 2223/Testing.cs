@@ -16,9 +16,16 @@ namespace CMP1903M_A01_2223
 			if (Pack.shuffleCardPack(1)) { Console.WriteLine("Successfully shuffled via Fisher-Yates Shuffle"); }
 			if (Pack.shuffleCardPack(2)) { Console.WriteLine("Successfully shuffled via Riffle Shuffle"); }
 			if (Pack.shuffleCardPack(3)) { Console.WriteLine("No Shuffle complete"); }
-			Pack.shuffleCardPack(4);
+
 			//Calls the deal method
+			Card dealt_card = Pack.deal();
 			//Check what is returned
+			Console.WriteLine($"Suit: {dealt_card.card_suit}, Value: {dealt_card.card_value}");
+
+			//Calls the deal mulltiple method
+			
+			//Check what is returned
+			
 		}
 	}
 }

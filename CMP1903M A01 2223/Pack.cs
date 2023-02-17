@@ -64,16 +64,20 @@ namespace CMP1903M_A01_2223
             }
 
         }
-        /*
+        
         public static Card deal()
         {
             //Deals one card
+            Card deal_card = pack[51];
+            pack.RemoveAt(51);
+            return deal_card;
 
         }
+        
         public static List<Card> dealCard(int amount)
         {
             //Deals the number of cards specified by 'amount'
         }
-        */
+        
     }
 }
