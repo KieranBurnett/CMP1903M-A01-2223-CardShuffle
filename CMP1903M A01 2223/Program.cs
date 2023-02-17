@@ -6,19 +6,12 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class Program
+	class Program
     {
         static void Main(string[] args)
         {
-
+			      Testing test = new Testing();
         }
-    }
-	public class Testing
-	{
-		public Testing()
-		{
-
 		}
 	}
-
 }
