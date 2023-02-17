@@ -8,10 +8,20 @@ namespace CMP1903M_A01_2223
 {
     class Pack
     {
-        List<Card> pack;
-
+		public List<Card> pack = new List<Card>();
         public Pack()
         {
+			for (int suit=1; suit<=4; suit++)
+            {
+                for (int value=1; value<=13; value++)
+                {
+					Card card = new Card();
+					card.card_value = value;
+                    card.card_suit = suit;
+                    pack.Add(card);
+                }
+            }
+            Console.WriteLine(pack[4].card_value);
             //Initialise the card pack here
         }
         /*
