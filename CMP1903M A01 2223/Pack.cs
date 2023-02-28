@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace CMP1903M_A01_2223
 {
@@ -73,11 +74,19 @@ namespace CMP1903M_A01_2223
             return deal_card;
 
         }
-        /*
+        
         public static List<Card> dealCard(int amount)
         {
-            //Deals the number of cards specified by 'amount'
-        }*/
+			//Deals the number of cards specified by 'amount'
+			List<Card> cards = new List<Card>();
+            int size = pack.Count();
+			for (int i = 0; i<amount; i++)
+            {
+				cards.Add(pack[size-i-1]);
+                pack.RemoveAt(size-i-1);
+            }
+			return cards;
+        }
         
     }
 }
