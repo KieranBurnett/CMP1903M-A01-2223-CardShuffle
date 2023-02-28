@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CMP1903M_A01_2223
+﻿namespace CMP1903M_A01_2223
 {
 	class Program
     {
         static void Main(string[] args)
         {
-			      Testing test = new Testing();
+	        Testing test = new Testing(); //Calls the testing class which tests/runs each function
         }
-		}
 	}
 }
