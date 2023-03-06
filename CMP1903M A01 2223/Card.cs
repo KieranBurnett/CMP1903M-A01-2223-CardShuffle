@@ -8,7 +8,7 @@ namespace CMP1903M_A01_2223
 		//Value: numbers 1 - 13
 		//Suit: numbers 1 - 4
 		//The 'set' methods for these properties could have some validation
-		private int Value; //Ensures the Value of each card is privatised and cannot be changed once set
+		private int Value; //Ensures the Value of each card is privatised and cannot be changed once set **Encapsulation**
 		public int card_value
 		{
 			get { return Value; }

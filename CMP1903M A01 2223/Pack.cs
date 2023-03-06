@@ -17,7 +17,7 @@ namespace CMP1903M_A01_2223
             {
                 for (int value=1; value<=13; value++) //Repeats 13 times for each card value 
                 {
-					Card card = new Card(); //Creates a new instance of Card
+					Card card = new Card(); //Creates a new instance of Card **Abstraction**
 					card.card_value = value; //Sets the value of the card
                     card.card_suit = suit; //Sets the suit of the card
                     pack.Add(card); //Add to the deck
@@ -68,7 +68,7 @@ namespace CMP1903M_A01_2223
         {
 			//Deals one card
 			int size = pack.Count(); //Use of pack.count to prevent outs of bounds exception, works on any deck size
-			Card deal_card = pack[size]; //Saves the top card as deal_card vairable
+			Card deal_card = pack[size-1]; //Saves the top card as deal_card vairable
             pack.RemoveAt(size); //Removes the top card from the deck to prevent it being dealt again
             return deal_card; //Returns the dealt card to the testing class
         }  
