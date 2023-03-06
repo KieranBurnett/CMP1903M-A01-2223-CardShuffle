@@ -8,7 +8,7 @@ namespace CMP1903M_A01_2223
 		public Testing()
 		{
 			//Creates a pack object
-			Pack card_pack = new Pack();
+			new Pack();
 			//Calls the shuffleCardPack method with each shuffle type
 			if (Pack.shuffleCardPack(1)) { Console.WriteLine("Successfully shuffled via Fisher-Yates Shuffle"); }
 			if (Pack.shuffleCardPack(2)) { Console.WriteLine("Successfully shuffled via Riffle Shuffle"); }
@@ -22,9 +22,21 @@ namespace CMP1903M_A01_2223
 
 			Console.WriteLine("");
 			//Calls the deal mulltiple method
-			List<Card> cards = Pack.dealCard(5);
+			int amount;
+			while(true)
+			{
+				try
+				{
+					Console.WriteLine("How many Cards: "); // for debugging, allows for input of wanted amount of cards to be dealt
+					amount = int.Parse(Console.ReadLine()); // reads input
+					if(amount > 0 && amount <= Pack.pack.Count) { break; } // checks it is within the correct boundaries
+					else { Console.WriteLine("Not a valid number in this case"); } // prevents out of bounds errors
+				}
+				catch { Console.WriteLine("Not a valid number"); } // prevents data type errors
+			}
+			List<Card> cards = Pack.dealCard(amount);
 			//Check what is returned
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < amount; i++)
 			{
 				Console.WriteLine($"Card number {i}'s Suit: {cards[i].card_suit}, Card number {i}'s Value: {cards[i].card_value}");
 			}

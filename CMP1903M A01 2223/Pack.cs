@@ -68,8 +68,9 @@ namespace CMP1903M_A01_2223
         {
 			//Deals one card
 			int size = pack.Count(); //Use of pack.count to prevent outs of bounds exception, works on any deck size
+			Console.WriteLine(pack[size-1]);
 			Card deal_card = pack[size-1]; //Saves the top card as deal_card vairable
-            pack.RemoveAt(size); //Removes the top card from the deck to prevent it being dealt again
+            pack.RemoveAt(size-1); //Removes the top card from the deck to prevent it being dealt again
             return deal_card; //Returns the dealt card to the testing class
         }  
         public static List<Card> dealCard(int amount)
